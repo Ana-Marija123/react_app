@@ -6,7 +6,7 @@ import './App.css';
 
 class App extends Component {
   render() {
-    let names=['Ana','Kika','Eleni'];
+    let names=['John','Mark','Eddie'];
     return (
       <div className="App">
         <header className="App-header">
@@ -14,8 +14,8 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
        
-        <Paragraph someContent="other component" someNumbers="01234"/>
-        <Paragraph someContent="other comp" someNumbers="56789"/>
+        <Paragraph someContent="paragraph component" someNumbers="1"/>
+        <Paragraph someContent="paragraph component" someNumbers="2"/>
         {
           names.map((n,i)=><HelloWorld fullName={n} key={i}/>)
         }
